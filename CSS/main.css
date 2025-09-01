@@ -619,7 +619,7 @@ body:has(#contact:target) a[href="#contact"]::after {
 }
 .contact .details
 {
-    color: var();
+
     margin-block: 10px;
     display: flex;
     flex-wrap: wrap;
