@@ -894,10 +894,7 @@ body:has(#contact:target) a[href="#contact"]::after {
     transform: translate(10px);
     background-color: #222;
 }
-.footer .section3
-{
-    /* width: 25%; */
-}
+
 .footer .section3 h3 
 {
     font-family: var(--third-font);
