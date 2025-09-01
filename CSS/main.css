@@ -138,7 +138,6 @@ body:has(#toogle-mood:checked) {
     z-index: 999999999;
     box-shadow: 0px 0px 14px 0px #0000001b;
 }
-
 .navbar .container
 {
     padding: 15px 7%;
@@ -149,7 +148,18 @@ body:has(#toogle-mood:checked) {
 .navbar .links ul
 {
     display: flex;
+    background-color: var(--nav-bg-color);
     gap: 30px;
+}
+
+.navbar .links ul .fa-xmark
+{
+    display: none;
+    color: var(--nav-txt-color);
+    transition: all var(--trans-time);
+}
+.navbar .links ul .fa-xmark:hover
+    {color: var(--nav-logo-color);
 }
 
 .navbar .links ul li a.active {

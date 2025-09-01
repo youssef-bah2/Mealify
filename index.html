@@ -29,6 +29,9 @@
         </div>
         <div class="links">
           <ul>
+            <label for="bar-click">
+              <i class="fa-solid fa-xmark"></i>
+            </label>
             <li><a href="#home">Home</a></li>
             <li><a href="#chefs">Chefs</a></li>
             <li><a href="#gallery">Gallery</a></li>
@@ -42,8 +45,10 @@
             <i class="fa-regular fa-sun sun"></i>
           </label>
           <div class="bar-icon">
-            
-            <i class="fa-solid fa-bars"></i>
+            <input type="checkbox" id="bar-click" hidden />
+            <label for="bar-click">
+              <i class="fa-solid fa-bars"></i>
+            </label>
           </div>
         </div>
       </div>
@@ -408,6 +413,18 @@
       });
     });
   });
+
+    document.addEventListener("DOMContentLoaded", function () {
+    const barClick = document.getElementById("bar-click"); 
+    const navLinks = document.querySelectorAll(".links ul li a");
+
+    navLinks.forEach(link => {
+      link.addEventListener("click", () => {
+        barClick.checked = false; 
+      });
+    });
+  });
+
 </script>
 
   </body>
